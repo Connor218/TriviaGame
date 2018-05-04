@@ -17,6 +17,6 @@
 
 ### Improvement
 * CSS
-
-## Author
+##
+### Author
 * Connor Barnett
