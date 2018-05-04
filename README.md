@@ -5,18 +5,18 @@
 * Answer questions and get a score!
 
 ##Content
-Trivia Game
-HTML
-CSS
-JavaScript
+* Trivia Game
+* HTML
+* CSS
+* JavaScript
 
 ##Knowledge
-Learn fuctions
-Learn for Loop's
-If statements
+* Learn fuctions
+* Learn for Loop's
+* If statements
 
 ##Improvement
-CSS
+* CSS
 
 ##Author
-Connor Barnett
+* Connor Barnett
