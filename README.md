@@ -1,21 +1,21 @@
 # TriviaGame
 
 
-## Function
+### Function
 * Answer questions and get a score!
 
-## Content
+### Content
 * Trivia Game
 * HTML
 * CSS
 * JavaScript
 
-## Knowledge
+### Knowledge
 * Learn fuctions
 * Learn for Loop's
 * If statements
 
-## Improvement
+### Improvement
 * CSS
 
 ## Author
