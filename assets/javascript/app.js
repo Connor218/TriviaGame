@@ -1,5 +1,6 @@
 var pick;
 var test;
+var choice;
 var count = 20;
 var correct = 0;
 var incorrect = 0;
@@ -24,18 +25,25 @@ var questions = [
         }
 
     
-    $("test").html("Question "+(num +1)+" of "+questions.length);
+    $("test").html("Question "+(num + 1)+" of "+questions.length);
         Q = questions[num][0];
         choiceA = questions[num][1];
         choiceB = questions[num][2];
         choiceC = questions[num][3];
         choiceD = questions[num][4];
 
-        $("#questi").html(question);
+        $("#questi").html();
         $("#quest").html(choiceA);
         $("#quest").html(choiceB);
         $("#quest").html(choiceC);
         $("#quest").html(choiceD);
 
-        $("#button").on("click", )
+        $("#button").on("click", function check() {
+            for(var i = 0; i <question.length; i++){
+                if(question[i] === true){
+                    
+                }
+
+            }
+        })
     }
