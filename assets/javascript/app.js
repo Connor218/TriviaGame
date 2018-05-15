@@ -1,95 +1,41 @@
-function Question(text, choices, answer) {
-    this.text = text;
-    this.choices = choices;
-    this.answer = answer;
-}
-
-Question.prototype.isCorrectAnswer = function(choice) {
-    return this.answer === choice;
-}
-
-function Quiz(questions) {
-    this.score = 0;
-    this.questions = questions;
-    this.questionIndex = 0;
-}
-
-Quiz.prototype.getQuestionIndex = function() {
-    return this.questions[this.questionIndex];
-}
-
-Quiz.prototype.guess = function(answer) {
-    if(this.getQuestionIndex().isCorrectAnswer(answer)) {
-        this.score++;
-    }
-
-    this.questionIndex++;
-}
-
-Quiz.prototype.isEnded = function() {
-    return this.questionIndex === this.questions.length;
-}
-
-
-function populate() {
-    if(quiz.isEnded()) {
-        showScores();
-    }
-    else {
-        // show question
-        var element = document.getElementById("question");
-        element.innerHTML = quiz.getQuestionIndex().text;
-
-        // show options
-        var choices = quiz.getQuestionIndex().choices;
-        for(var i = 0; i < choices.length; i++) {
-            var element = document.getElementById("choice" + i);
-            element.innerHTML = choices[i];
-            guess("btn" + i, choices[i]);
-        }
-
-        showProgress();
-    }
-};
-
-function guess(id, guess) {
-    var button = document.getElementById(id);
-    button.onclick = function() {
-        quiz.guess(guess);
-        populate();
-    }
-};
-
-
-function showProgress() {
-    var currentQuestionNumber = quiz.questionIndex + 1;
-    var element = document.getElementById("progress");
-    element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
-};
-
-function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
-    var element = document.getElementById("quiz");
-    element.innerHTML = gameOverHTML;
-};
-
-// create questions
+var pick;
+var test;
+var count = 20;
+var correct = 0;
+var incorrect = 0;
+var num = 0;
 var questions = [
-    new Question("What super villain once broke Batman's back?", ["Joker", "Bane","Killer Croc", "Ras al Ghul"], "Bane"),
-    new Question("What were the names of Bruce Wayne's parents?", ["Thomas and Martha", "George and Elaine", "James and Elizabeth", "Wayne and Alice"], "Thomas and Martha"),
-    new Question("What former District Attorney became the villain known as Two-Face?", ["Floyd Lawton", "Jason Blood","Edward Nygma", "Harvey Dent"], "Harvey Dent"),
-    new Question("What villain did Arnold Schwarzenegger play in Batman & Robin?", ["Two-Face", "Bane", "Mr.Freeze", "Killer Croc"], "Mr.Freeze"),
-    new Question("What superpower does the Joker have?", ["None", "Super Strength", "Super Speed", "Super Intelligence"], "None")
+    ["What super villain once broke Batman's back?", "Joker", "Bane","Killer Croc", "Ras al Ghul", "B"],
+    ["What were the names of Bruce Wayne's parents?", "Thomas and Martha", "George and Elaine", "James and Elizabeth", "Wayne and Alice", "A"],
+    ["What former District Attorney became the villain known as Two-Face?", "Floyd Lawton", "Jason Blood","Edward Nygma", "Harvey Dent", "D"],
+    ["What villain did Arnold Schwarzenegger play in Batman & Robin?", "Two-Face", "Bane", "Mr.Freeze", "Killer Croc", "C"],
+    ["What superpower does the Joker have?", "None", "Super Strength", "Super Speed", "Super Intelligence", "A"],
 ];
 
-// create quiz
-var quiz = new Quiz(questions);
-
-// display quiz
-populate();
 
 
+    function getQ(){
+        if(num >= questions.length){
+            $("pick").html("<div>You got"+correct+" of "+questions.length+" questions correct</div>");
+            $("test").html("Test Completed");
+            num = 0;
+            correct = 0;
+            return false;
+        }
 
+    
+    $("test").html("Question "+(num +1)+" of "+questions.length);
+        Q = questions[num][0];
+        choiceA = questions[num][1];
+        choiceB = questions[num][2];
+        choiceC = questions[num][3];
+        choiceD = questions[num][4];
 
+        $("#questi").html(question);
+        $("#quest").html(choiceA);
+        $("#quest").html(choiceB);
+        $("#quest").html(choiceC);
+        $("#quest").html(choiceD);
 
+        $("#button").on("click", )
+    }
