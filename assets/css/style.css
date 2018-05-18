@@ -1,11 +1,21 @@
+
+
 body {
     background-color: black;
     background-image: url(http://getwallpapers.com/wallpaper/full/f/c/3/542315.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    color: white;
+}
+.hide {
+    display: none;
 }
 
-.grid {
+.selected {
+    background: red;
+}
+
+/* .grid {
     width: 600px;
     height: 500px;
     margin: 0 auto;
@@ -68,4 +78,4 @@ body {
     color: black;
     font-size: 18px;
     text-align: center;
-}
+} */

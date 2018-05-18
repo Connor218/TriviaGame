@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <title>Quiz</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
-    <div class="grid">
-        <div id="quiz">
+    <div>
             <h1>Batman Trivia!</h1>
             <hr style="margin-bottom: 20px">
+            <button id="start" class="btn">Start</button>
+            <div id="timer-wrap" class="hide"> 
+                <p> Time left: <span id="timer">20</span></p>
+            </div>
+            <div id="game-wrap" class="hide"> 
+                <div id="game-questions"></div>
+                <div id="results-wrap"></div>
+            </div>
 
+    </div>
+    <!-- <div class="grid">
+        <div id="quiz">
+           
             <h2 id= "questi">
-            <input type = "radio" id = "quest" name = "question" value = "choiceA"><br>
-            <input type = "radio" id = "quest" name = "question" value = "choiceB"><br>
-            <input type = "radio" id = "quest" name = "question" value = "choiceC"><br>
-            <input type = "radio" id = "quest" name = "question" value = "choiceD"><br>
+            <input type = "radio" id = "quest1" name = "question" value = "choiceA"><br>
+            <input type = "radio" id = "quest2" name = "question" value = "choiceB"><br>
+            <input type = "radio" id = "quest3" name = "question" value = "choiceC"><br>
+            <input type = "radio" id = "quest4" name = "question" value = "choiceD"><br>
        
             <input id= "button" type = "button" value = "Done">
             
             <hr style="margin-top: 50px">
             <footer>
                 <p id="progress">Question x of y</p>
+               
             </footer>
         </div>
-    </div>
+    </div> -->
 
-<script src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>
