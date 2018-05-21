@@ -1,8 +1,24 @@
 $(document).ready(function(){
     var questions = [{
-        q:"Q1",
-        o:["01", "02", "03", "04"],
-        a:"01"
+        q:"What super villain once broke Batman's back?",
+        o:["Joker", "Bane","Killer Croc", "Ras al Ghul"],
+        a:"Bane",
+    },{
+        q:"What were the names of Bruce Wayne's parents?",
+        o:["Thomas and Martha", "George and Elaine", "James and Elizabeth", "Wayne and Alice"],
+        a:"Thomas and Martha",        
+    },{
+        q:"What former District Attorney became the villain known as Two-Face?",
+        o:["Floyd Lawton", "Jason Blood","Edward Nygma", "Harvey Dent"],
+        a:"Harvey Dent",         
+    },{
+        q:"What villain did Arnold Schwarzenegger play in Batman & Robin?",
+        o:["Two-Face", "Bane", "Mr.Freeze", "Killer Croc"],
+        a:"Mr.Freeze",        
+    },{
+        q:"What superpower does the Joker have?",
+        o:["None", "Super Strength", "Super Speed", "Super Intelligence"],
+        a:"None",        
     }]
     var pick;
     var test;
